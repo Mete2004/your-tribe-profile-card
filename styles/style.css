@@ -22,11 +22,11 @@ article.profile-card-example {
   align-items: center;
   justify-content: flex-end;
   width: 50vw;
-  max-width: 25em;
+  max-width: 35em;
   min-width: 20em;
   border-radius: 1rem;
-  background: rgb(0,239,95);
-  background: linear-gradient(0deg, rgb(0, 255, 0) 40%, #768075 100%);
+  /* background: rgb(0,239,95); */
+  background: linear-gradient(0deg, rgb(65, 65, 65) 60%, #454545 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
 }
@@ -41,7 +41,12 @@ header.profile-card-example-header {
   /* Je kunt selectors nesten! */
   h1 {
     margin: 2rem 0 1rem;
-    color: rgb(65, 222, 2);
+    color: rgb(255, 255, 255);
+  }
+
+  p {
+    color: rgb(206, 206, 206);
+
   }
 
 }
@@ -55,13 +60,13 @@ button.profile-card-example-button {
   padding: .25rem;
   border: none;
   border-radius: 50%;
-  background: rgba(65,222,2,1);
+  background: rgb(225, 225, 225);
   transform: scale(.8);
   transition: .25s;
 }
 button.profile-card-example-button:focus {
   outline: none;
-  background: #41DE02;
+  background: #d6d6d6;
 }
 button.profile-card-example-button svg {
   position: absolute;
@@ -132,9 +137,16 @@ button.profile-card-example-button svg:nth-of-type(2) {
   }
 }
 
+.profile-card-example-dl img{
+  width: 50px;
+  height: 50px;
+}
+
 
 .profile-card-example p {
   margin: 0;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 
 .profile-card-example > p {
@@ -143,7 +155,7 @@ button.profile-card-example-button svg:nth-of-type(2) {
   padding: 3rem 2rem;
   border-radius: 0 0 1rem 1rem;
   text-align: center;
-  background: rgba(255,255,255, 0.5);
+  background: rgba(176, 176, 176, 0.5);
 }
 
 /* Deze styles zijn van toepassing als je op de knop klikt */
